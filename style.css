@@ -1314,6 +1314,9 @@ td {
   color: var(--light);
 }
 /* skin care page */
+.skin-concern{
+  padding: 36px 0px;
+}
 .skin-concern-card i{
 font-size: 10px;
 color: var(--primary);
@@ -1322,4 +1325,24 @@ color: var(--primary);
   border: solid 1px var(--primary);
   padding: 10px;
   border-radius: 10px;
+}
+.skin-concern-card div:hover {
+  background-color: var(--primary);
+  background-image: url("./assets/images/Star Pharmacy logo icon.png");
+  background-repeat: no-repeat;
+  background-position: right top;
+  height: 100%;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  background-size: contain;
+}
+
+.skin-concern-card div:hover i, .skin-concern-card div:hover p{
+  color: var(--light);
+   transition: 0.3s ease-in-out;
+}
+
+.skin-concern .concern-left{
+  padding: 10px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
