@@ -1309,19 +1309,19 @@ td {
   scrollbar-color: var(--primary) var(--accent); /* thumb color then track color */
   scrollbar-width: thin;
 }
-.activeDosage{
+.activeDosage {
   background-color: var(--primary);
   color: var(--light);
 }
 /* skin care page */
-.skin-concern{
+.skin-concern {
   padding: 36px 0px;
 }
-.skin-concern-card i{
-font-size: 10px;
-color: var(--primary);
+.skin-concern-card i {
+  font-size: 10px;
+  color: var(--primary);
 }
-.skin-concern-card div{
+.skin-concern-card div {
   border: solid 1px var(--primary);
   padding: 10px;
   border-radius: 10px;
@@ -1337,12 +1337,304 @@ color: var(--primary);
   background-size: contain;
 }
 
-.skin-concern-card div:hover i, .skin-concern-card div:hover p{
+.skin-concern-card div:hover i,
+.skin-concern-card div:hover p {
   color: var(--light);
-   transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
-.skin-concern .concern-left{
-  padding: 10px;
+.skin-concern .concern-left {
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border: #eaeaea 1px solid;
+  border-radius: 10px;
+}
+.skin-concern .concern-right {
+  border: #eaeaea 1px solid;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border-radius: 10px;
+}
+.skin-concern .concern-right h3 {
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--primary);
+}
+.skin-concern .concern-right .list  h4{
+  font-size: 18px;
+  font-weight: 700;
+}
+.skin-concern .concern-right .list  i{
+  font-size: 10px;
+}
+/************************************* timeline ******************************/
+.main-timeline {
+  position: relative;
+}
+
+.main-timeline::after {
+  content: "";
+  position: absolute;
+  width: 6px;
+  background-color: var(--primary);
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+.timeline {
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+.timeline::after {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -13px;
+  background-color: var(--accent);
+  border: 2px solid var(--primary);
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.timeline.highlight::after {
+  background-color: var(--primary);
+  border-color: var(--primary);
+  transform: scale(1.5);
+  transition: all 0.3s ease-in-out;
+  box-shadow: inset 0 0 0 4px white;
+}
+
+.timeline::after {
+  transition: all 0.3s ease-in-out;
+}
+
+.left {
+  padding: 0px 40px 20px 0px;
+  left: 0;
+}
+
+.right {
+  padding: 0px 0px 20px 40px;
+  left: 50%;
+}
+
+.left::before {
+  content: " ";
+  position: absolute;
+  top: 18px;
+  z-index: 1;
+  right: 30px;
+  border: medium solid white;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent white;
+}
+
+.right::before {
+  content: " ";
+  position: absolute;
+  top: 18px;
+  z-index: 1;
+  left: 30px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+}
+
+.right::after {
+  left: -12px;
+}
+.timeline.highlight .card {
+  animation: fadeInUp 0.6s ease-in-out both;
+  border: 2px solid var(--primary);
+  background-color: var(--primary);
+}
+.timeline.highlight .card p {
+  color: var(--dark);
+  animation: fadeInUp 0.6s ease-in-out both;
+}
+.timeline-head .icon {
+  padding: 36px;
+  border-radius: 10px;
+  background-color: var(--light);
+  position: relative;
+  border: 1px solid var(--dark);
+}
+.timeline-head .icon i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--dark);
+}
+.timeline.highlight .timeline-head .icon {
+  padding: 36px;
+  border-radius: 10px;
+  background-color: var(--light);
+  position: relative;
+  border: 1px solid var(--primary);
+}
+.timeline.highlight .timeline-head .icon i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--primary);
+}
+.timeline-head h3 {
+  font-size: 16px;
+}
+.timeline-head h4 {
+  font-size: 20px;
+  font-weight: 700;
+}
+.timeline.highlight .timeline-head h3 {
+  color: var(--light);
+}
+.timeline.highlight .timeline-head h4 {
+  color: var(--light);
+}
+.timeline-body i {
+  font-size: 8px;
+}
+.timeline.highlight .timeline-body i,
+.timeline.highlight .timeline-body p {
+  color: var(--light);
+}
+.time-line-btn {
+  background-color: var(--light);
+  border: solid 1px var(--dark);
+  border-radius: 8px;
+  padding: 10px 18px;
+  color: var(--dark);
+  font-weight: 600;
+}
+.timeline.highlight .time-line-btn {
+  background-color: var(--light);
+  border: solid 1px var(--primary);
+  color: var(--primary);
+}
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(600px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media screen and (max-width: 600px) {
+  /* Place the timelime to the left */
+  .main-timeline::after {
+    left: 31px;
+  }
+
+  /* Full-width containers */
+  .timeline {
+    width: 100%;
+    /* padding-left: 70px;
+    padding-right: 25px; */
+    padding-left: 50px;
+    padding-right: 2px;
+  }
+
+  /* Make sure that all arrows are pointing leftwards */
+  .timeline::before {
+    left: 60px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+
+  /* Make sure all circles are at the same spot */
+  .left::after,
+  .right::after {
+    left: 18px;
+  }
+
+  .left::before {
+    right: auto;
+  }
+
+  /* Make all right containers behave like the left ones */
+  .right {
+    left: 0%;
+  }
+}
+
+/************************************* timeline ******************************/
+.service-tabs {
+  padding: 36px 0px;
+}
+.service-tabs .tablinks.active {
+  background-color: var(--light);
+  border-radius: 50px;
+  padding: 8px 12px;
+}
+.service-tabs .tablinks {
+  padding: 8px 12px;
+}
+.service-tabs .tabs-icons {
+  position: relative;
+  padding: 18px;
+  background-color: var(--light);
+  border-radius: 50%;
+}
+.service-tabs .tabs-icons i {
+  color: var(--primary);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.service-tabs .tablinks.active .tabs-icons i {
+  color: var(--light);
+}
+.service-tabs .tablinks.active .tabs-icons {
+  background-color: var(--primary);
+}
+.service-tabs .tabcontent {
+  background-color: var(--primary-light);
+  border: 1px solid var(--light);
+  border-radius: 20px;
+}
+.service-tabs .tabcontent i {
+  font-size: 8px;
+}
+.service-tabs .tabcontent h3 {
+  font-size: 18px;
+}
+.service-tabs .tabcontent-detail {
+  background-color: var(--light);
+  padding: 10px;
+  border-radius: 8px;
+}
+.service-tabs .tabcontent p {
+  color: var(--primary-light);
+}
+.service-tabs .tabcontent {
+  display: none;
+}
+.tab-link.active{
+   background-color: var(--primary);
+  background-image: url("./assets/images/Star Pharmacy logo icon.png");
+  background-repeat: no-repeat;
+  background-position: right top;
+  height: 100%;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  background-size: contain;
+}
+
+.tab-link.active i,
+.tab-link.active p {
+  color: var(--light);
+  transition: 0.3s ease-in-out;
 }

@@ -182,3 +182,43 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 
+// Time Line
+  document.addEventListener("DOMContentLoaded", () => {
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("highlight");
+                } else {
+                    entry.target.classList.remove("highlight");
+                }
+            });
+        }, {
+            threshold: 0.8
+        });
+
+        document.querySelectorAll(".timeline").forEach(timeline => {
+            observer.observe(timeline);
+        });
+    });
+
+// Service Page Discription Tab
+function ProductDis(evt, cityName) {
+  var i, tabcontent, tablinks;
+
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+
+  tablinks = document.getElementsByClassName("tab-link");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+  document.querySelector(".tab-link").click();
+});    

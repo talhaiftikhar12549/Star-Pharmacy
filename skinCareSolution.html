@@ -284,37 +284,914 @@
     <section class="skin-concern">
       <div class="set-container">
         <div class="d-flex justify-content-between gap-4">
-          <div class="w-25 concern-left p-3">
+          <div class="w-25 concern-left p-4">
             <h3 class="fs-5 fw-bold pb-2">Choose Your Skin Concern</h3>
             <div class="skin-concern-card d-flex flex-column gap-3">
-              <div class="d-flex gap-3 align-items-center">
-                <i class="fa fa-circle" ></i>
+              <div class="d-flex gap-3 align-items-center tab-link" onclick="ProductDis(event, 'Eczema')">
+                <i class="fa fa-circle"></i>
                 <p class="my-1">Eczema</p>
               </div>
-              <div class="d-flex gap-3 align-items-center">
-                <i class="fa fa-circle" ></i>
+              <div class="d-flex gap-3 align-items-center tab-link"  onclick="ProductDis(event, 'Psoriasis')">
+                <i class="fa fa-circle"></i>
                 <p class="my-1">Psoriasis</p>
               </div>
-              <div class="d-flex gap-3 align-items-center">
-                <i class="fa fa-circle" ></i>
+              <div class="d-flex gap-3 align-items-center tab-link"  onclick="ProductDis(event, 'Dry Skin')">
+                <i class="fa fa-circle"></i>
                 <p class="my-1">Dry Skin</p>
               </div>
-              <div class="d-flex gap-3 align-items-center">
-                <i class="fa fa-circle" ></i>
-                <p class="my-1">Rosacea</p>
+              <div class="d-flex gap-3 align-items-center tab-link"  onclick="ProductDis(event, 'Description')">
+                <i class="fa fa-circle"></i>
+                <p class="my-1">Description</p>
               </div>
-              <div class="d-flex gap-3 align-items-center">
-                <i class="fa fa-circle" ></i>
+              <div class="d-flex gap-3 align-items-center tab-link"  onclick="ProductDis(event, 'Sensitive Skin')">
+                <i class="fa fa-circle"></i>
                 <p class="my-1">Sensitive Skin</p>
               </div>
-              <div class="d-flex gap-3 align-items-center">
-                <i class="fa fa-circle" ></i>
+              <div class="d-flex gap-3 align-items-center tab-link"  onclick="ProductDis(event, 'Skincare Routine')">
+                <i class="fa fa-circle"></i>
                 <p class="my-1">Skincare Routine</p>
               </div>
             </div>
           </div>
-          <div class="w-75 concern-right">
-            <h2></h2>
+          <div class="w-75 concern-right p-4">
+            <div id="Eczema" class="tabcontent">
+              <h2 class="fw-semibold f">Skincare Routine for Eczema</h2>
+              <h3>Description</h3>
+              <p>
+                Eczema-prone skin is often dry, inflamed or highly reactive to
+                environmental triggers. A gentle and consistent skincare routine
+                can help manage symptoms, reduce flare-ups and protect your
+                skin’s natural barrier.
+              </p>
+              <p>
+                Explore our complete guide for an in-depth look at eczema care,
+                treatment options, and expert skincare tips.
+              </p>
+              <h3>Best Skincare Products for Eczema-Prone Skin</h3>
+              <div class="list py-3">
+                <div class="py-1">
+                  <div class="d-flex gap-2 align-items-center">
+                    <i class="fa fa-circle color-primary"></i>
+                    <h4 class="m-0">Fragrance-free emollients:</h4>
+                  </div>
+                  <p>Help lock in moisturiser and reduce irritation</p>
+                </div>
+                <div class="py-1">
+                  <div class="d-flex gap-2 align-items-center">
+                    <i class="fa fa-circle color-primary"></i>
+                    <h4 class="m-0">Ointments:</h4>
+                  </div>
+                  <p>
+                    Ointments are thicker and long-lasting, ideal for dry
+                    patches 
+                  </p>
+                </div>
+                <div class="py-1">
+                  <div class="d-flex gap-2 align-items-center">
+                    <i class="fa fa-circle color-primary"></i>
+                    <h4 class="m-0">Ceramide-rich moisturisers:</h4>
+                  </div>
+                  <p>Promote the skin’s natural barrier and promote healing </p>
+                </div>
+                <div class="py-1">
+                  <div class="d-flex gap-2 align-items-center">
+                    <i class="fa fa-circle color-primary"></i>
+                    <h4 class="m-0">Soap-free cleansers:</h4>
+                  </div>
+                  <p>
+                    Non-foaming cleansers prevent stripping natural oils from
+                    the skin
+                  </p>
+                </div>
+                <div class="py-1">
+                  <div class="d-flex gap-2 align-items-center">
+                    <i class="fa fa-circle color-primary"></i>
+                    <h4 class="m-0">pH-balanced formulas:</h4>
+                  </div>
+                  <p>Help keep your skin’s natural balance in check</p>
+                </div>
+              </div>
+
+              <section class="set-container">
+                <div class="section-header">
+                  <h2>Top Pharmacy Picks</h2>
+                </div>
+                <div class="products">
+                  <div class="product">
+                    <div class="product-image">
+                      <img
+                        src="assets/images/health-care-tablets.png"
+                        alt="Health Care Tablets"
+                        srcset=""
+                      />
+                      <div class="product-overlay">
+                        <div class="overlay-body">
+                          <i class="fa fa-heart"></i>
+                          <i class="fa fa-search"></i>
+                          <i class="fa fa-shopping-cart"></i>
+                        </div>
+                        <div class="overlay-footer">
+                          <button class="btn-primary">Add to Cart</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="product-body">
+                      <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <!-- <i class="fa fa-star-half-stroke"></i> -->
+                      </div>
+                      <div class="product-title">
+                        <h3>Health Care Tablets</h3>
+                      </div>
+                      <div class="product-price">
+                        <h5><span>£25.59</span> £19.59</h5>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="product">
+                    <div class="product-image">
+                      <img
+                        src="assets/images/health-care-tablets.png"
+                        alt="Health Care Tablets"
+                        srcset=""
+                      />
+                      <div class="product-overlay">
+                        <div class="overlay-body">
+                          <i class="fa fa-heart"></i>
+                          <i class="fa fa-search"></i>
+                          <i class="fa fa-shopping-cart"></i>
+                        </div>
+                        <div class="overlay-footer">
+                          <button class="btn-primary">Add to Cart</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="product-body">
+                      <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <!-- <i class="fa fa-star-half-stroke"></i> -->
+                      </div>
+                      <div class="product-title">
+                        <h3>Health Care Tablets</h3>
+                      </div>
+                      <div class="product-price">
+                        <h5><span>£25.59</span> £19.59</h5>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="product">
+                    <div class="product-image">
+                      <img
+                        src="assets/images/health-care-tablets.png"
+                        alt="Health Care Tablets"
+                        srcset=""
+                      />
+                      <div class="product-overlay">
+                        <div class="overlay-body">
+                          <i class="fa fa-heart"></i>
+                          <i class="fa fa-search"></i>
+                          <i class="fa fa-shopping-cart"></i>
+                        </div>
+                        <div class="overlay-footer">
+                          <button class="btn-primary">Add to Cart</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="product-body">
+                      <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <!-- <i class="fa fa-star-half-stroke"></i> -->
+                      </div>
+                      <div class="product-title">
+                        <h3>Health Care Tablets</h3>
+                      </div>
+                      <div class="product-price">
+                        <h5><span>£25.59</span> £19.59</h5>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="product">
+                    <div class="product-image">
+                      <img
+                        src="assets/images/health-care-tablets.png"
+                        alt="Health Care Tablets"
+                        srcset=""
+                      />
+                      <div class="product-overlay">
+                        <div class="overlay-body">
+                          <i class="fa fa-heart"></i>
+                          <i class="fa fa-search"></i>
+                          <i class="fa fa-shopping-cart"></i>
+                        </div>
+                        <div class="overlay-footer">
+                          <button class="btn-primary">Add to Cart</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="product-body">
+                      <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <!-- <i class="fa fa-star-half-stroke"></i> -->
+                      </div>
+                      <div class="product-title">
+                        <h3>Health Care Tablets</h3>
+                      </div>
+                      <div class="product-price">
+                        <h5><span>£25.59</span> £19.59</h5>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            </div>
+            <div id="Psoriasis" class="tabcontent">
+              <h2 class="fw-semibold f">Skincare Routine for Psoriasis</h2>
+              <h3>Description</h3>
+              <p>
+                Eczema-prone skin is often dry, inflamed or highly reactive to
+                environmental triggers. A gentle and consistent skincare routine
+                can help manage symptoms, reduce flare-ups and protect your
+                skin’s natural barrier.
+              </p>
+              <p>
+                Explore our complete guide for an in-depth look at eczema care,
+                treatment options, and expert skincare tips.
+              </p>
+              <h3>Best Skincare Products for Eczema-Prone Skin</h3>
+              <div class="list py-3">
+                <div class="py-1">
+                  <div class="d-flex gap-2 align-items-center">
+                    <i class="fa fa-circle color-primary"></i>
+                    <h4 class="m-0">Fragrance-free emollients:</h4>
+                  </div>
+                  <p>Help lock in moisturiser and reduce irritation</p>
+                </div>
+                <div class="py-1">
+                  <div class="d-flex gap-2 align-items-center">
+                    <i class="fa fa-circle color-primary"></i>
+                    <h4 class="m-0">Ointments:</h4>
+                  </div>
+                  <p>
+                    Ointments are thicker and long-lasting, ideal for dry
+                    patches 
+                  </p>
+                </div>
+                <div class="py-1">
+                  <div class="d-flex gap-2 align-items-center">
+                    <i class="fa fa-circle color-primary"></i>
+                    <h4 class="m-0">Ceramide-rich moisturisers:</h4>
+                  </div>
+                  <p>Promote the skin’s natural barrier and promote healing </p>
+                </div>
+                <div class="py-1">
+                  <div class="d-flex gap-2 align-items-center">
+                    <i class="fa fa-circle color-primary"></i>
+                    <h4 class="m-0">Soap-free cleansers:</h4>
+                  </div>
+                  <p>
+                    Non-foaming cleansers prevent stripping natural oils from
+                    the skin
+                  </p>
+                </div>
+                <div class="py-1">
+                  <div class="d-flex gap-2 align-items-center">
+                    <i class="fa fa-circle color-primary"></i>
+                    <h4 class="m-0">pH-balanced formulas:</h4>
+                  </div>
+                  <p>Help keep your skin’s natural balance in check</p>
+                </div>
+              </div>
+
+              <section class="set-container">
+                <div class="section-header">
+                  <h2>Top Pharmacy Picks</h2>
+                </div>
+                <div class="products">
+                  <div class="product">
+                    <div class="product-image">
+                      <img
+                        src="assets/images/health-care-tablets.png"
+                        alt="Health Care Tablets"
+                        srcset=""
+                      />
+                      <div class="product-overlay">
+                        <div class="overlay-body">
+                          <i class="fa fa-heart"></i>
+                          <i class="fa fa-search"></i>
+                          <i class="fa fa-shopping-cart"></i>
+                        </div>
+                        <div class="overlay-footer">
+                          <button class="btn-primary">Add to Cart</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="product-body">
+                      <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <!-- <i class="fa fa-star-half-stroke"></i> -->
+                      </div>
+                      <div class="product-title">
+                        <h3>Health Care Tablets</h3>
+                      </div>
+                      <div class="product-price">
+                        <h5><span>£25.59</span> £19.59</h5>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="product">
+                    <div class="product-image">
+                      <img
+                        src="assets/images/health-care-tablets.png"
+                        alt="Health Care Tablets"
+                        srcset=""
+                      />
+                      <div class="product-overlay">
+                        <div class="overlay-body">
+                          <i class="fa fa-heart"></i>
+                          <i class="fa fa-search"></i>
+                          <i class="fa fa-shopping-cart"></i>
+                        </div>
+                        <div class="overlay-footer">
+                          <button class="btn-primary">Add to Cart</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="product-body">
+                      <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <!-- <i class="fa fa-star-half-stroke"></i> -->
+                      </div>
+                      <div class="product-title">
+                        <h3>Health Care Tablets</h3>
+                      </div>
+                      <div class="product-price">
+                        <h5><span>£25.59</span> £19.59</h5>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="product">
+                    <div class="product-image">
+                      <img
+                        src="assets/images/health-care-tablets.png"
+                        alt="Health Care Tablets"
+                        srcset=""
+                      />
+                      <div class="product-overlay">
+                        <div class="overlay-body">
+                          <i class="fa fa-heart"></i>
+                          <i class="fa fa-search"></i>
+                          <i class="fa fa-shopping-cart"></i>
+                        </div>
+                        <div class="overlay-footer">
+                          <button class="btn-primary">Add to Cart</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="product-body">
+                      <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <!-- <i class="fa fa-star-half-stroke"></i> -->
+                      </div>
+                      <div class="product-title">
+                        <h3>Health Care Tablets</h3>
+                      </div>
+                      <div class="product-price">
+                        <h5><span>£25.59</span> £19.59</h5>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="product">
+                    <div class="product-image">
+                      <img
+                        src="assets/images/health-care-tablets.png"
+                        alt="Health Care Tablets"
+                        srcset=""
+                      />
+                      <div class="product-overlay">
+                        <div class="overlay-body">
+                          <i class="fa fa-heart"></i>
+                          <i class="fa fa-search"></i>
+                          <i class="fa fa-shopping-cart"></i>
+                        </div>
+                        <div class="overlay-footer">
+                          <button class="btn-primary">Add to Cart</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="product-body">
+                      <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <!-- <i class="fa fa-star-half-stroke"></i> -->
+                      </div>
+                      <div class="product-title">
+                        <h3>Health Care Tablets</h3>
+                      </div>
+                      <div class="product-price">
+                        <h5><span>£25.59</span> £19.59</h5>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            </div>
+            <div id="Dry Skin" class="tabcontent">
+              <h2 class="fw-semibold f">Skincare Routine for Dry SKin</h2>
+              <h3>Description</h3>
+              <p>
+                Eczema-prone skin is often dry, inflamed or highly reactive to
+                environmental triggers. A gentle and consistent skincare routine
+                can help manage symptoms, reduce flare-ups and protect your
+                skin’s natural barrier.
+              </p>
+              <p>
+                Explore our complete guide for an in-depth look at eczema care,
+                treatment options, and expert skincare tips.
+              </p>
+              <h3>Best Skincare Products for Eczema-Prone Skin</h3>
+              <div class="list py-3">
+                <div class="py-1">
+                  <div class="d-flex gap-2 align-items-center">
+                    <i class="fa fa-circle color-primary"></i>
+                    <h4 class="m-0">Fragrance-free emollients:</h4>
+                  </div>
+                  <p>Help lock in moisturiser and reduce irritation</p>
+                </div>
+                <div class="py-1">
+                  <div class="d-flex gap-2 align-items-center">
+                    <i class="fa fa-circle color-primary"></i>
+                    <h4 class="m-0">Ointments:</h4>
+                  </div>
+                  <p>
+                    Ointments are thicker and long-lasting, ideal for dry
+                    patches 
+                  </p>
+                </div>
+                <div class="py-1">
+                  <div class="d-flex gap-2 align-items-center">
+                    <i class="fa fa-circle color-primary"></i>
+                    <h4 class="m-0">Ceramide-rich moisturisers:</h4>
+                  </div>
+                  <p>Promote the skin’s natural barrier and promote healing </p>
+                </div>
+                <div class="py-1">
+                  <div class="d-flex gap-2 align-items-center">
+                    <i class="fa fa-circle color-primary"></i>
+                    <h4 class="m-0">Soap-free cleansers:</h4>
+                  </div>
+                  <p>
+                    Non-foaming cleansers prevent stripping natural oils from
+                    the skin
+                  </p>
+                </div>
+                <div class="py-1">
+                  <div class="d-flex gap-2 align-items-center">
+                    <i class="fa fa-circle color-primary"></i>
+                    <h4 class="m-0">pH-balanced formulas:</h4>
+                  </div>
+                  <p>Help keep your skin’s natural balance in check</p>
+                </div>
+              </div>
+
+              <section class="set-container">
+                <div class="section-header">
+                  <h2>Top Pharmacy Picks</h2>
+                </div>
+                <div class="products">
+                  <div class="product">
+                    <div class="product-image">
+                      <img
+                        src="assets/images/health-care-tablets.png"
+                        alt="Health Care Tablets"
+                        srcset=""
+                      />
+                      <div class="product-overlay">
+                        <div class="overlay-body">
+                          <i class="fa fa-heart"></i>
+                          <i class="fa fa-search"></i>
+                          <i class="fa fa-shopping-cart"></i>
+                        </div>
+                        <div class="overlay-footer">
+                          <button class="btn-primary">Add to Cart</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="product-body">
+                      <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <!-- <i class="fa fa-star-half-stroke"></i> -->
+                      </div>
+                      <div class="product-title">
+                        <h3>Health Care Tablets</h3>
+                      </div>
+                      <div class="product-price">
+                        <h5><span>£25.59</span> £19.59</h5>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="product">
+                    <div class="product-image">
+                      <img
+                        src="assets/images/health-care-tablets.png"
+                        alt="Health Care Tablets"
+                        srcset=""
+                      />
+                      <div class="product-overlay">
+                        <div class="overlay-body">
+                          <i class="fa fa-heart"></i>
+                          <i class="fa fa-search"></i>
+                          <i class="fa fa-shopping-cart"></i>
+                        </div>
+                        <div class="overlay-footer">
+                          <button class="btn-primary">Add to Cart</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="product-body">
+                      <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <!-- <i class="fa fa-star-half-stroke"></i> -->
+                      </div>
+                      <div class="product-title">
+                        <h3>Health Care Tablets</h3>
+                      </div>
+                      <div class="product-price">
+                        <h5><span>£25.59</span> £19.59</h5>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="product">
+                    <div class="product-image">
+                      <img
+                        src="assets/images/health-care-tablets.png"
+                        alt="Health Care Tablets"
+                        srcset=""
+                      />
+                      <div class="product-overlay">
+                        <div class="overlay-body">
+                          <i class="fa fa-heart"></i>
+                          <i class="fa fa-search"></i>
+                          <i class="fa fa-shopping-cart"></i>
+                        </div>
+                        <div class="overlay-footer">
+                          <button class="btn-primary">Add to Cart</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="product-body">
+                      <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <!-- <i class="fa fa-star-half-stroke"></i> -->
+                      </div>
+                      <div class="product-title">
+                        <h3>Health Care Tablets</h3>
+                      </div>
+                      <div class="product-price">
+                        <h5><span>£25.59</span> £19.59</h5>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="product">
+                    <div class="product-image">
+                      <img
+                        src="assets/images/health-care-tablets.png"
+                        alt="Health Care Tablets"
+                        srcset=""
+                      />
+                      <div class="product-overlay">
+                        <div class="overlay-body">
+                          <i class="fa fa-heart"></i>
+                          <i class="fa fa-search"></i>
+                          <i class="fa fa-shopping-cart"></i>
+                        </div>
+                        <div class="overlay-footer">
+                          <button class="btn-primary">Add to Cart</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="product-body">
+                      <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <!-- <i class="fa fa-star-half-stroke"></i> -->
+                      </div>
+                      <div class="product-title">
+                        <h3>Health Care Tablets</h3>
+                      </div>
+                      <div class="product-price">
+                        <h5><span>£25.59</span> £19.59</h5>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            </div>
+            <div id="Description" class="tabcontent">
+              <h2 class="fw-semibold f">Skincare Routine for Eczema</h2>
+              <h3>Description</h3>
+              <p>
+                Eczema-prone skin is often dry, inflamed or highly reactive to
+                environmental triggers. A gentle and consistent skincare routine
+                can help manage symptoms, reduce flare-ups and protect your
+                skin’s natural barrier.
+              </p>
+              <p>
+                Explore our complete guide for an in-depth look at eczema care,
+                treatment options, and expert skincare tips.
+              </p>
+              <h3>Best Skincare Products for Eczema-Prone Skin</h3>
+              <div class="list py-3">
+                <div class="py-1">
+                  <div class="d-flex gap-2 align-items-center">
+                    <i class="fa fa-circle color-primary"></i>
+                    <h4 class="m-0">Fragrance-free emollients:</h4>
+                  </div>
+                  <p>Help lock in moisturiser and reduce irritation</p>
+                </div>
+                <div class="py-1">
+                  <div class="d-flex gap-2 align-items-center">
+                    <i class="fa fa-circle color-primary"></i>
+                    <h4 class="m-0">Ointments:</h4>
+                  </div>
+                  <p>
+                    Ointments are thicker and long-lasting, ideal for dry
+                    patches 
+                  </p>
+                </div>
+                <div class="py-1">
+                  <div class="d-flex gap-2 align-items-center">
+                    <i class="fa fa-circle color-primary"></i>
+                    <h4 class="m-0">Ceramide-rich moisturisers:</h4>
+                  </div>
+                  <p>Promote the skin’s natural barrier and promote healing </p>
+                </div>
+                <div class="py-1">
+                  <div class="d-flex gap-2 align-items-center">
+                    <i class="fa fa-circle color-primary"></i>
+                    <h4 class="m-0">Soap-free cleansers:</h4>
+                  </div>
+                  <p>
+                    Non-foaming cleansers prevent stripping natural oils from
+                    the skin
+                  </p>
+                </div>
+                <div class="py-1">
+                  <div class="d-flex gap-2 align-items-center">
+                    <i class="fa fa-circle color-primary"></i>
+                    <h4 class="m-0">pH-balanced formulas:</h4>
+                  </div>
+                  <p>Help keep your skin’s natural balance in check</p>
+                </div>
+              </div>
+
+              <section class="set-container">
+                <div class="section-header">
+                  <h2>Top Pharmacy Picks</h2>
+                </div>
+                <div class="products">
+                  <div class="product">
+                    <div class="product-image">
+                      <img
+                        src="assets/images/health-care-tablets.png"
+                        alt="Health Care Tablets"
+                        srcset=""
+                      />
+                      <div class="product-overlay">
+                        <div class="overlay-body">
+                          <i class="fa fa-heart"></i>
+                          <i class="fa fa-search"></i>
+                          <i class="fa fa-shopping-cart"></i>
+                        </div>
+                        <div class="overlay-footer">
+                          <button class="btn-primary">Add to Cart</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="product-body">
+                      <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <!-- <i class="fa fa-star-half-stroke"></i> -->
+                      </div>
+                      <div class="product-title">
+                        <h3>Health Care Tablets</h3>
+                      </div>
+                      <div class="product-price">
+                        <h5><span>£25.59</span> £19.59</h5>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="product">
+                    <div class="product-image">
+                      <img
+                        src="assets/images/health-care-tablets.png"
+                        alt="Health Care Tablets"
+                        srcset=""
+                      />
+                      <div class="product-overlay">
+                        <div class="overlay-body">
+                          <i class="fa fa-heart"></i>
+                          <i class="fa fa-search"></i>
+                          <i class="fa fa-shopping-cart"></i>
+                        </div>
+                        <div class="overlay-footer">
+                          <button class="btn-primary">Add to Cart</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="product-body">
+                      <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <!-- <i class="fa fa-star-half-stroke"></i> -->
+                      </div>
+                      <div class="product-title">
+                        <h3>Health Care Tablets</h3>
+                      </div>
+                      <div class="product-price">
+                        <h5><span>£25.59</span> £19.59</h5>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="product">
+                    <div class="product-image">
+                      <img
+                        src="assets/images/health-care-tablets.png"
+                        alt="Health Care Tablets"
+                        srcset=""
+                      />
+                      <div class="product-overlay">
+                        <div class="overlay-body">
+                          <i class="fa fa-heart"></i>
+                          <i class="fa fa-search"></i>
+                          <i class="fa fa-shopping-cart"></i>
+                        </div>
+                        <div class="overlay-footer">
+                          <button class="btn-primary">Add to Cart</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="product-body">
+                      <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <!-- <i class="fa fa-star-half-stroke"></i> -->
+                      </div>
+                      <div class="product-title">
+                        <h3>Health Care Tablets</h3>
+                      </div>
+                      <div class="product-price">
+                        <h5><span>£25.59</span> £19.59</h5>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="product">
+                    <div class="product-image">
+                      <img
+                        src="assets/images/health-care-tablets.png"
+                        alt="Health Care Tablets"
+                        srcset=""
+                      />
+                      <div class="product-overlay">
+                        <div class="overlay-body">
+                          <i class="fa fa-heart"></i>
+                          <i class="fa fa-search"></i>
+                          <i class="fa fa-shopping-cart"></i>
+                        </div>
+                        <div class="overlay-footer">
+                          <button class="btn-primary">Add to Cart</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="product-body">
+                      <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <!-- <i class="fa fa-star-half-stroke"></i> -->
+                      </div>
+                      <div class="product-title">
+                        <h3>Health Care Tablets</h3>
+                      </div>
+                      <div class="product-price">
+                        <h5><span>£25.59</span> £19.59</h5>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- How does it Work? -->
+    <section class="work bg-accent">
+      <div class="set-container">
+        <div class="section-header py-3">
+          <h2 class="color-light">How it Works</h2>
+        </div>
+        <div class="d-flex justify-content-between align-items-center gap-5">
+          <div
+            class="d-flex flex-column justify-content-center align-items-center gap-2"
+          >
+            <div class="work-icon">
+              <i class="fa fa-shopping-cart"></i>
+            </div>
+            <h3 class="m-0 fs-5 py-1 fw-semibold color-light">
+              Online consultation
+            </h3>
+            <p class="text-center color-light">
+              Fill out a questionnaire about your health and submit your
+              pictures to check
+            </p>
+          </div>
+
+          <div
+            class="d-flex flex-column justify-content-center align-items-center gap-2"
+          >
+            <div class="work-icon">
+              <i class="fa fa-shopping-cart"></i>
+            </div>
+            <h3 class="m-0 fs-5 py-1 fw-semibold color-light">
+              Pick up or fast delivery
+            </h3>
+            <p class="text-center color-light">
+              Once approved, your medication will be delivered quickly and
+              discreetly.
+            </p>
+          </div>
+          <div
+            class="d-flex flex-column justify-content-center align-items-center gap-2"
+          >
+            <div class="work-icon">
+              <i class="fa fa-shopping-cart"></i>
+            </div>
+            <h3 class="m-0 fs-5 py-1 fw-semibold color-light">
+              Ongoing support
+            </h3>
+            <p class="text-center color-light">
+              Regular follow-ups and free weight loss advice from our expert
+              clinicians. 
+            </p>
           </div>
         </div>
       </div>
