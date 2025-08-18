@@ -1195,7 +1195,8 @@ footer h5 {
   color: var(--primary);
   font-size: 24px;
 }
-.servicetable {
+.servicetable,
+.half-n-half {
   padding: 36px 0px;
 }
 .table-container th,
@@ -1358,11 +1359,11 @@ td {
   font-weight: 600;
   color: var(--primary);
 }
-.skin-concern .concern-right .list  h4{
+.skin-concern .concern-right .list h4 {
   font-size: 18px;
   font-weight: 700;
 }
-.skin-concern .concern-right .list  i{
+.skin-concern .concern-right .list i {
   font-size: 10px;
 }
 /************************************* timeline ******************************/
@@ -1622,8 +1623,8 @@ td {
 .service-tabs .tabcontent {
   display: none;
 }
-.tab-link.active{
-   background-color: var(--primary);
+.tab-link.active {
+  background-color: var(--primary);
   background-image: url("./assets/images/Star Pharmacy logo icon.png");
   background-repeat: no-repeat;
   background-position: right top;
